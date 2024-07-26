@@ -11,6 +11,10 @@
     --white: #fff;
 }
 
+html {
+    background-color: var(--page-color)
+}
+
 header {
     background-color: var(--header-color);
     color: var(--white);
