@@ -1,50 +1,32 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
+ <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- This site was made with TailwindCSS -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" href="images/lemongd.png">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
     <title>lemongd website</title>
 </head>
-<body class="dark:bg-slate-900">
-    <div class="justify-center text-center p-8">
-    <h1 class="font-bold text-5xl dark:text-white cursor-default">lemongd</h1>
-    <h1 class="dark:text-white p-2">Самый кубированный куб из кубов.</h1><br>
+<body>
+    <header>
+        <img src="lemongdcube.png">&nbsp;lemongd・<a href="#home">home</a>・<a href="#info">info</a>
+    </header>
+    <div class="home" id="home">
+        <h1>Привет, меня зовут lemongd</h1>
+        <p>я лоботряс, бездельник и ещё что-то...</p>
     </div>
-    <div class="justify-center text-center p-5">
-        <h1 class="font-bold text-3xl dark:text-white">Обо мне</h1><br>
-        <div class="rounded-lg bg-slate-100 dark:bg-slate-800 p-6 text-left drop-shadow-lg">
-            <img src="images/lemongdavatar.png" class="float-right rounded-lg" width="130rem" title="какой красавчик!">
-            <h1 class="dark:text-white text-2xl font-bold">Привет!</h1>
-            <p class="dark:text-white">Я Тимофей, более известен по псевдониму lemongd.</p>
-            <p class="dark:text-white">Если кратенько, то я нн-челик, у которого есть гдпс. Я люблю зеленый скитллс и хачапури с ветчиной и сыром 😍</p><br>
-            <p class="dark:text-white font-bold animate-bounce" id="hooray">мне купили новый микрофон! 🥳</p>
-        </div><br>
-        <h1 class="font-bold text-3xl dark:text-white">Навигация по сайту</h1><br>
-        <div class="flex items-stretch">
-        <div class="rounded-lg bg-slate-100 dark:bg-slate-800 p-6 drop-shadow-lg w-2/6 text-left">
-            <h1 class="dark:text-white text-2xl font-bold">Мои проекты</h1><br>
-            <p class="dark:text-white">Мои самые лучшие и самые нужные проекты.</h1><br><br>
-            <button class="transform ease-in-out delay-100 hover:scale-110 duration-150 rounded-lg font-bold bg-slate-500 dark:bg-slate-600 text-white dark:text-white p-2" onclick='document.location = "/other/projects.html"'>Перейти</button>
-        </div>&nbsp;&nbsp;
-        <div class="rounded-lg bg-slate-100 dark:bg-slate-800 p-6 drop-shadow-lg w-2/6 text-left">
-            <h1 class="dark:text-white text-2xl font-bold">Соц-сети</h1><br>
-            <p class="dark:text-white">Хочешь написать мне или связаться со мной? Тебе сюда!</h1><br>
-            <p class="dark:text-white opacity-20">если это вообще кому-то надо...</p><br>
-            <button class="transform ease-in-out delay-100 hover:scale-110 duration-150 rounded-lg font-bold bg-slate-500 dark:bg-slate-600 text-white dark:text-white p-2" onclick='document.location = "/other/socnetworks.html"'>Перейти</button>
-        </div>&nbsp;&nbsp;
-        <div class="rounded-lg bg-slate-100 dark:bg-slate-800 p-6 drop-shadow-lg w-2/6 text-left">
-            <h1 class="dark:text-white text-2xl font-bold">Галерея</h1><br>
-            <p class="dark:text-white">Моя личная галерея, где хранятся все мои скриншоты.</h1><br>
-            <p class="dark:text-white opacity-20">там весь компромат на m4xbond...</p><br>
-            <button class="transform ease-in-out delay-100 hover:scale-110 duration-150 rounded-lg font-bold bg-slate-500 dark:bg-slate-600 text-white dark:text-white p-2" onclick="alert('Ты точно хочешь войти?'), alert('Ты уверен?'), alert('Это последнее предупреждение, ты ТОЧНО УВЕРЕН?'), alert('Древние в паутине ворота открываются...'), document.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', window.open('/other/fakeGallery.html')">Перейти</button>
+    <div class="info1" id="info">
+        <h1>Обо мне</h1><br>
+        <p>Моё настоящее имя - Тимофей, люблю увлекаться программированием, дизайном, и т.д. <br> Люблю зелёный скиттлс, молочный ломтик, и ещё <a href="list.txt">много чего другого!</a></p>
+    </div>
+    <div class="info2">
+        <h1>Остальное</h1><br>
+        <div class="flex">
+        <div class="card"><h2>Мои проекты</h2><br><p>А что ещё сюда добавить?</p><br><br><a href="projects.html" class="button">Перейти</a><br><br></div>
+        <div class="card"><h2>Соцсети</h2><br><p>Хочешь связаться со мной? Тебе сюда!</p><br><br><a href="social.html" class="button">Перейти</a><br><br></div>
+        <div class="card"><h2>Кладовка</h2><br><p style="font-family: 'Consolas';">это место ещё не разведано... рискнёшь перейти?</p><br><br><a class="button2" id="button">Перейти</a><br><br></div>
         </div>
     </div>
-</div>
 </body>
-<script src="/scripts/theme.js"></script>
-<script src="/scripts/script.js"></script>
+<script src="script.js"></script>
 </html>
