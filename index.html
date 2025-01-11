@@ -1,33 +1,93 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="lemongdcube.png">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <meta content="happywl3mon website" property="og:title" />
+    <meta content="человек года по версии журнала..." property="og:description" />
+    <meta content="https://happywl3mon.github.io/" property="og:url" />
+    <meta content="favicon.png" property="og:image" />
+    <meta content="#00f7ff" data-react-helmet="true" name="theme-color" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>* {font-family: 'Inter Tight';}</style>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>lemongd website</title>
 </head>
-<body>
-    <header>
-        <img src="lemongdcube.png">&nbsp;lemongd・<a href="#home">home</a>・<a href="#info">info</a>
-    </header>
-    <div class="home" id="home">
-        <h1>Привет, меня зовут lemongd</h1>
-        <p>я лоботряс, бездельник и ещё что-то...</p>
+<body class="bg-neutral-800 text-center text-white">
+    <div class="mt-8 mb-8">
+        <p id="text" class="text-neutral-400"></p>
+        <h1 class="text-5xl font-bold" id="my-name">lemongd</h1>
     </div>
-    <div class="info1" id="info">
-        <h1>Обо мне</h1><br>
-        <p>Моё настоящее имя - Тимофей, люблю увлекаться программированием, дизайном, и т.д. <br> Люблю зелёный скиттлс, молочный ломтик, и ещё <a href="list.txt">много чего другого!</a></p>
+    <div class="flex items-center justify-center text-left mb-6">
+        <div class="bg-neutral-700 p-6 w-5/6 h-auto rounded-lg shadow-lg">
+            <div class="float-left">
+                <h1 class="text-2xl w-40 font-bold">привет!</h1>
+                <p class="float-left">меня зовут [читайте выше]! <br> я люблю программировать, бездельничать, кушать зелёный скиттлс с молочным ломтиком <a href="list.txt" class="text-cyan-400">(у меня много предпочтений в еде)</a>, и т.д. <br> <span class="text-neutral-400">я опять переделал сайт уже в третий раз...</span></p>
+            </div>
+            <div class="float-right">
+                <img src="img/lemongdavatar.jpg" class="rounded-lg float-right position-absolute" width="130rem">
+            </div>
+        </div>
     </div>
-    <div class="info2">
-        <h1>Остальное</h1><br>
-        <div class="flex">
-        <div class="card"><h2>Мои проекты</h2><br><p>А что ещё сюда добавить?</p><br><br><a href="projects.html" class="button">Перейти</a><br><br></div>
-        <div class="card"><h2>Соцсети</h2><br><p>Здесь ты можешь найти мои соцсети... (кто у нас тут самый внимательный?)</p><br><br><a href="social.html" class="button">Перейти</a><br><br></div>
-        <div class="card"><h2>Кладовка</h2><br><p style="font-family: 'Consolas';">это место ещё не разведано... рискнёшь перейти?</p><br><br><a class="button2" id="button">Перейти</a><br><br></div>
+    <h1 class="text-2xl font-semibold mb-5">мои скромные проекты</h1>
+    <div class="flex justify-center mb-6">
+        <div class="grid lg:grid-cols-3 sm:grid-cols-1 gap-4">
+            <div class="bg-neutral-700 w-96 p-6 rounded-lg text-left shadow-lg">
+                <img src="img/simpletime.svg" alt="simpletime®" width="200px" class="">
+                <p class="mb-6">удобный способ смотреть время, один из моих первых и любимых проектов.</p>
+                <a href="/simpletime/" class="p-[0.8em] font-semibold rounded-xl bg-neutral-800">перейти</a>
+                <p class="mb-3"></p>
+            </div>
+            <div class="bg-neutral-700 w-96 p-6 rounded-lg text-left shadow-lg">
+                <h1 class="text-3xl font-bold">lemongdps</h1>
+                <p class="mb-6">пожалуй, мой лучший проект за всё время, к сожалению в настоящее время закрыт.</p>
+                <a href="https://lemongdps.github.io" class="p-[0.8em] font-semibold rounded-xl bg-neutral-800">перейти</a>
+            </div>
+            <div class="bg-neutral-700 w-96 p-6 rounded-lg text-left shadow-lg">
+                <h1 class="text-3xl font-bold">lemoncraft</h1>
+                <p class="mb-6">крутышкинский майнкрафт-сервер, в настоящее время также закрыт.</p>
+                <a href="https://happywl3mon.github.io/lemoncraft" class="p-[0.8em] font-semibold rounded-xl bg-neutral-800">перейти</a>
+            </div>
+        </div>
+    </div>
+    <h1 class="text-2xl font-semibold mb-5">❄️ новогодний раздел ❄️</h1>
+    <div class="flex justify-center mb-6">
+        <div class="grid lg:grid-cols-3 sm:grid-cols-1 gap-4 flex flex-row">
+            <div class="bg-neutral-700 w-[20em] p-6 rounded-lg text-left shadow-lg">
+                <p class="lowercase mb-6">
+                    С Новым годом, с Рождеством! <br>
+                    Пусть с добром войдут в ваш дом, <br>
+                    Принеся с собой в придачу <br>
+                    Счастье, радость и удачу! <br>
+                    
+                    Много ярких, светлых дней, <br>
+                    Продуктивных вам идей. <br>
+                    Пусть здоровье не подводит <br>
+                    При любой в году погоде!
+                </p>
+            </div>
+            <div class="bg-neutral-700 w-[20em] p-6 rounded-lg text-center shadow-lg" id="timer">
+                <h1 class="text-3xl mb-4 font-semibold text-neutral-400">до Нового Года осталось:</h1>
+                <div id="timer">
+                    <span class="text-4xl font-bold"><span id="days"></span> <span id="days-title"></span></span><br>
+                    <span id="hours"></span> <span id="hours-title"></span>,
+                    <span id="minutes"></span> <span id="minutes-title"></span>,
+                    <span id="seconds"></span> <span id="seconds-title"></span>.
+                </div>
+            </div>
+            <div class="bg-neutral-700 w-[20em] p-6 rounded-lg text-left shadow-lg">
+                <h1 class="text-3xl font-bold">- стон, и ФИЖМА!</h1>
+                <p class="mb-6">какая ещё <span class="font-bold">ФИЖМА?</span> хватит выдумывать. <br> - это старинное слово, оно означает Fizhma. ничего не понял? тогда жмякай на кнопку ниже!</p>
+                <a href="/fizhma/" class="p-[0.8em] font-semibold rounded-xl bg-neutral-800">фижма</a>
+            </div>
         </div>
     </div>
 </body>
-<script src="script.js"></script>
+
+<script src="scripts/script.js"></script>
+<script src="scripts/snow.js"></script>
+<script src="scripts/timer.js"></script>
 </html>

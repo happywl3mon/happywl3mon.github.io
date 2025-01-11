@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>fizhma - a cheapest Figma ANALog</title>
+</head>
+<body>
+    <!-- i am fizhma enjoyer -->
+    <div class="header">
+        <img onclick="javascript:PopUpShow()" src="news.png" id="news" alt="📰">
+        <span>FIZHMA</span>
+        <p>a cheapest Figma ANALog</p>
+    </div>
+    <div class="popup" id="popup1">
+        <div class="popup-content">
+            <h1>news</h1>
+            <p>
+                release!
+                <br>
+                &bull; added color picker <br>
+                &bull; added easter egg <br>
+                &bull; removed herobrine
+            </p>
+            <a href="javascript:PopUpHide()">close</a>
+        </div>
+    </div>
+    <div>
+        <button onclick="location.reload()">Fizhma Cleaning</button>
+        <button id="fizhma">What a Fizhma?</button>
+        <!-- fizhma gyatt -->
+        <video src="fizhma.mp4" id="video" class="hidden video" width="1200px" height="1200px"></video>
+    </div>
+    <div>
+        <!-- colors -->
+        <input type="color" id="picker">
+    </div>
+    <div>
+        <canvas id="drawingCanvas" width="800" height="600" style="border:1px solid #000; background: #ffffff;"></canvas>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

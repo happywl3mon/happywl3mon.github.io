@@ -1,0 +1,50 @@
+* {
+    background: #b5b4a8;
+    font-family: 'Comic Sans MS','Comic Neue', sans-serif !important;
+    margin: 0; padding: 0;
+    text-align: center;
+}
+
+.header span {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.header img {
+    position: absolute;
+    left: 96.9%;
+    top: 1%;
+}
+
+h1, h2, h3, p, button, input {
+    margin: 0 0 0.5em 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+}
+
+.popup-content{
+    margin: 40px auto 0px auto;
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+}

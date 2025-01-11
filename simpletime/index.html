@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="simpletime®" property="og:title" />
+    <meta content="удобный способ смотреть время" property="og:description" />
+    <meta content="https://lemongd.ru/simpletime" property="og:url" />
+    <meta content="favicon.png" property="og:image" />
+    <meta content="#b0b0b0" data-react-helmet="true" name="theme-color" />
+    <link rel="stylesheet" href="style.css">
+    <style>* {font-family: 'Inter Tight';}</style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>simpletime® - удобный способ смотреть время</title>
+</head>
+<body class="bg-[#333] text-center text-white">
+    <header class="bg-[#222] p-2 flex justify-between mb-6 mt-3 sm:w-[90%] lg:w-[85em] rounded-lg mx-auto flex items-center justify-between p-3 lg:px-8 shadow-xl ">
+        <img src="/img/simpletime.svg" alt="simpletime®" width="130rem">
+        <div class="relative inline-block">
+            <img src="/img/settings.svg" alt="настройки" width="25px" class="cursor-pointer" id="button">
+            <div id="menu" class="absolute right-0 p-2 mt-6 w-62 bg-[#222] rounded shadow-lg hidden transform transition-transform duration-300 opacity-0">
+                <div class="flex block py-2">
+                    <p class="px-2 py-1 text-gray-200">шрифт:&nbsp;
+                        <select name="font" id="font" class="bg-[#333] p-2 rounded-lg">
+                            <option value="inter tight">Inter Tight (classic)</option>
+                            <option value="manrope">Manrope (old)</option>
+                            <option value="jetbrains mono">Jetbrains Mono</option>
+                            <option value="times new roman">Times New Roman</option>
+                            <option value="comic neue">Comic Sans</option>
+                        </select>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="p-4">
+        <h1 class="text-neutral-400 mb-1 font-semibold" id="h1">точное время в вашем городе:</h1>
+        <div class="text-7xl font-semibold" id="clock"></div>
+        <p id="DayToday"></p>
+    </div>
+</body>
+<script src="/scripts/snow.js"></script>
+<script src="js/time.js"></script>
+<script src="js/dropdown.js"></script>
+<script src="js/settings.js"></script>
+</html>
